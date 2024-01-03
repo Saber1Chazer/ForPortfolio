@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О всём и просто / №1 Криптовалюта.</title>
+    <link rel="stylesheet" href="LinkHoverEffect.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Preloader.css">
+</head>
+<body>
+
+    <div id="preloader_container">
+        <span class="loader"></span>
+    </div>
+
+    <div id="container__navigation">
+     <div id="navigation">
+        <div id="div__FutureProject">
+            <h2>Future Project</h2>
+        </div>
+        <div id="div__list__FutureProject">
+            <ul style="
+                list-style: none;
+                width: 200px;
+                display: flex;
+                justify-content: space-evenly;">
+                <li>Главная (скоро)</li>
+                <li>О нас (скоро)</li>
+                <!-- <li>Информация</li> -->
+            </ul>
+        </div>
+     </div> 
+    </div>
+
+    <div id="white__space"></div>
+    
+    <header id="header__content">
+        <div id="navigation__buttons__one" class="navigation__buttons__left_right">
+            <div id="container__link__cryptoexchange">
+                <div style="display: flex;" id="div__n_b_o">
+                    <img
+                    src="https://public.bnbstatic.com/20190405/eb2349c3-b2f8-4a93-a286-8f86a62ea9d8.png"
+                    alt="">
+                    <div style="display: flex; align-items: center; flex-direction: column;">
+                     <h3>Binance</h3>
+                     <a href="https://accounts.binance.com/register?ref=565345835">
+                       <p>Регистрация</p>
+                     </a>
+                    </div>
+                </div>
+            
+            
+                <div style="display: flex;" id="div__n_b_o">
+                    <img
+                    src="data:image/png;base64,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"
+                    alt="">
+                    <div style="display: flex; align-items: center; flex-direction: column;">
+                    <h3>ByBit</h3>
+                    <a href="https://www.bybit.com/invite?ref=8MWYMG">
+                     <p>Регистрация</p>
+                    </a>
+                  </div>
+                </div>
+            
+            
+                <div style="display: flex;" id="div__n_b_o">
+                   <img 
+                   src="https://www.okx.com/cdn/assets/imgs/221/B1041DB14722953A.png"
+                   alt="">
+                   <div style="display: flex; align-items: center; flex-direction: column;">
+                   <h3>OKX</h3>
+                   <a href="https://okx.com/join/70065862">
+                    <p>Регистрация</p>
+                   </a>
+                 </div>
+                </div>
+
+                <div style="display: flex;" id="div__n_b_o">
+                   <img
+                   src="data:image/png;base64,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"
+                   alt="">
+                   <div style="display: flex; align-items: center; flex-direction: column;">
+                   <h3>BingX</h3>
+                   <a href="https://bingx.com/invite/UG3UGB">
+                    <p>Регистрация</p>
+                   </a>
+                </div>
+            </div>
+                <div style="display: flex;" id="div__n_b_o">
+                <img
+                src="https://assets.staticimg.com/cms/media/3gfl2DgVUqjJ8FnkC7QxhvPmXmPgpt42FrAqklVMr.png"
+                alt="">
+                <div style="display: flex; align-items: center; flex-direction: column;">
+                    <h3>KuCoin</h3>
+                    <a href="https://www.kucoin.com/r/rf/QBSKGBCG">
+                        <p>Регистрация</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="navigation__buttons__two">
+            <h1 style="font-family: 'Courier New', Courier, monospace;">Криптовалюта. Первый и последний урок!</h1>
+            <img src="imgcrypto.jpg" class="img__n_b_t">
+            <div>
+             <h2>Что такое криптовалюта?</h2>
+             <p>Криптовалюта — это цифровые деньги. Представьте, что у вас есть кошелек, но он существует только в интернете.</p>
+            </div>
+            <div style="padding-top: 10px; padding-bottom: 3px;">
+                <i>Биткоин как и другие монеты/токены это как и цифровое золото. <br> Их можно сравнить с золотом. Они ограниченны в количестве, и люди хранят его как ценное актив.</i>
+            </div>
+            <div>
+                <h2>Смарт-контракты как программы на блокчейне.</h2>
+                <p>Смарт-контракты — это программы, которые выполняются на блокчейне. Они автоматизируют выполнение контрактных условий без участия посредников.</p>
+            </div>
+            <br><hr>
+            <div>
+                <h3>KYC (Know Your Customer) и AML (Anti-Money Laundering) как процедуры проверки личности.</h3>
+                <p>KYC и AML — это процедуры, которые могут потребоваться при регистрации на бирже, они предназначены для проверки вашей личности и предотвращения отмывания денег. Они фактически везде есть, но на <a href="https://bingx.com/invite/UG3UGB" class="linkhover">BingX</a> его нет.</p>
+            </div>
+            <br><hr>
+            <div>
+                <h2>Блокчейн как цифровая книга.</h2>
+                <p>Блокчейн — это как цифровая книга, в которой записаны все транзакции с криптовалютой. Каждая страница (блок) связана с предыдущей, и невозможно изменить информацию без изменения всей истории.</p>
+            </div>
+            <div>
+                <h2>Где эта криптовалюта покупается?</h2>
+                <p>Самый простой, быстрый и надежный вариант это - через криптобиржу, но можно через офлайн крипто-обменники, посторонних продавцов и тд. (в последних вариантах вам понадобится крипто-кошелек)</p>
+                <p><i>Пример криптобирж:
+                    <a href="https://www.bybit.com/invite?ref=8MWYMG" class="linkhover">ByBit</a>,
+                    <a href="https://accounts.binance.com/register?ref=565345835" class="linkhover">Binance</a>,
+                    <a href="https://okx.com/join/70065862" class="linkhover">OKX</a>,
+                    <a href="https://bingx.com/invite/UG3UGB" class="linkhover">BingX</a>.
+                    <br>
+                    Везде потребуется паспортная
+                    верификация, кроме <a href="https://bingx.com/invite/UG3UGB" class="linkhover">BingX</a>.</i></p>
+            </div>
+            <div>
+                <h2>Где хранить эти монеты?</h2>
+                <p>Есть несколько вариантов, либо на бирже (там где вы и купили), либо на горячем/холодном крипто-кошельке. По типу: MetaMask, Trust Wallet. </p>
+                <p>
+                    <i>Горячий кошелек – это кошелек, подключенный к сети Интернет, а холодный – это кошелек, который, ни к какой сети не подключен. (так-же чаще всего это кошелек в виде флешки - соответственно этот вариант безопаснее, но не удобнее)</i>
+                    <br>
+                    <a href="https://telegra.ph/Kak-polzovatsya-kripto-koshelkami-09-20" class="linkhover">Полное руководство по крипто-кошелькам, + термины и тп.</a>
+                </p>
+            </div>
+            <br><hr>
+            <div>
+              <h2>Получение криптовалюты.</h2>
+              <h4 style="padding-top: 7px;">1. Выбор Кошелька:</h4>
+              <p>Выберите кошелек (wallet). Это может быть программный кошелек на вашем компьютере или мобильном устройстве, онлайн-кошелек или даже аппаратный (хардварный) кошелек для большей безопасности.</p>
+              <h4 style="padding-top: 7px;">2. Создание Адреса:</h4>
+              <p>Ваш кошелек предоставит вам уникальный адрес. Этот адрес — ваша "цифровая подпись" для получения криптовалюты. По нему можно отправлять вам средства.</p>
+              <h4 style="padding-top: 7px;">3. Получение криптовалюты:</h4>
+              <p>Передайте свой адрес отправителю, чтобы он мог отправить вам криптовалюту. Адрес нужно скопировать и отправить кому нужно, через мессенджер или отсканировав QR-код.</p>
+            </div>
+
+            <div>
+                <h2>Отправка криптовалют.</h2>
+                <h4 style="padding-top: 7px;">1. Выбор Адреса Получателя:</h4>
+                <p>Если вы хотите отправить криптовалюту, у вас должен быть адрес получателя. Это может быть адрес другого кошелька или биржи.</p>
+                <h4 style="padding-top: 7px;">2. Выбор Количества и Типа Криптовалюты:</h4>
+                <p>Укажите сумму и тип криптовалюты, которую вы хотите отправить. Убедитесь, что у вас достаточно средств на счету.</p>
+                <h4 style="padding-top: 7px;">3. Ввод Адреса и Отправка:</h4>
+                <p>Введите адрес получателя и подтвердите транзакцию. При использовании мобильного же кошелька вы можете просто отсканировать QR-код, но и по-прежнему можно по адресу.</p>
+                <h4 style="padding-top: 7px;">4. Комиссия за Транзакцию:</h4>
+                <p>Если вы отправляете через мобильный кошелек, то там будет возможность изменить стоимость комиссии, но это может повлиять на время отправки. А если вы отправляете через биржу, то там такой функции нет. Поэтому я рекомендую самые дешевые на данный момент: polygon, bep20, trc20.</p>
+                <h4 style="padding-top: 7px;">5. Отслеживание Транзакции:</h4>
+                <p>После отправки транзакции вы можете отследить ее статус с помощью блокчейна, если нужно.</p>
+            </div>
+
+            <div>
+                <h3>Дополнительные советы.</h3>
+                <h4 style="padding-top: 1.5px;">Безопасность:</h4>
+                <p>Следите за безопасностью своего кошелька. Используйте надежные пароли, активируйте двухфакторную аутентификацию и регулярно делайте резервные копии.</p>
+                <h4 style="padding-top: 6px;">Проверка Адреса:</h4>
+                <p>Перед отправкой криптовалюты удостоверьтесь, что вы ввели правильный адрес получателя. Ошибки в адресах могут привести к потере средств.</p>
+                <h4 style="padding-top: 6px;">Стоимость Транзакции:</h4>
+                <p>Учитывайте комиссии за транзакции. В зависимости от загруженности сети и типа кошелька, они могут различаться.</p>
+                <h4 style="padding-top: 6px;">Конфиденциальность:</h4>
+                <p>Некоторые криптовалюты обеспечивают более высокий уровень конфиденциальности. Учитывайте этот аспект при выборе актива для отправки.</p>
+            </div>
+            <br><hr>
+            <!-- <a href="https://telegra.ph/Kak-polzovatsya-kripto-koshelkami-09-20">(список)</a> -->
+            <h1 style="margin-top: 25px;">Хорошо. А как зарабатывать?</h1>
+            <i>Нуу, есть несколько вариантов, которые мы сейчас рассмотрим.</i>
+            <div>
+              <ul class="list__earn">
+                <li>Стейкинг</li>
+                <i>Стейкинг (англ. Staking) — пассивный доход от удержания крипты на счету проекта/биржи/..., проще говоря это как депозит в банке.</i>
+                <li>Майнинг</li>
+                <i>Майнинг (англ. Mining «добыча полезных ископаемых») — производство (добыча) криптовалюты за счёт компьютерного оборудования. Пример майнеров (их 3 вида) <a href="https://www.google.com/search?q=%D0%BC%D0%B0%D0%B9%D0%BD%D0%B5%D1%80&sca_esv=593987521&tbm=isch&sxsrf=AM9HkKno7USn5-ndFUaUG-_FHnlePirEKQ:1703685298170&source=lnms&sa=X&ved=2ahUKEwicjYao4q-DAxVxVPEDHaZqCjkQ_AUoAnoECAEQBA">1</a>, <a href="https://www.google.com/search?q=%D0%BC%D0%B0%D0%B9%D0%BD%D0%B5%D1%80+%D0%BD%D0%B0+%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%BC+%D0%BF%D0%BA&tbm=isch&ved=2ahUKEwiR_PjI4q-DAxUMzwIHHdZrAD0Q2-cCegQIABAA&oq=%D0%BC%D0%B0%D0%B9%D0%BD%D0%B5%D1%80+%D0%BD%D0%B0+%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%BC+%D0%BF%D0%BA&gs_lcp=CgNpbWcQAzoFCAAQgAQ6BwgAEIAEEBg6BAgjECc6BggAEAUQHlD2CFjoSmDgTGgFcAB4AIABhAKIAbgQkgEGNy4xMS4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=9yyMZdGkCYyei-gP1teB6AM&bih=641&biw=1349&hl=ru">2</a> и <a href="https://www.google.com/search?q=%D0%BE%D0%B1%D0%BB%D0%B0%D1%87%D0%BD%D1%8B%D0%B9+%D0%BC%D0%B0%D0%B9%D0%BD%D0%B8%D0%BD%D0%B3&tbm=isch&ved=2ahUKEwivsMXQ4q-DAxV_9gIHHVAfCpYQ2-cCegQIABAA&oq=%D0%BE%D0%B1%D0%BB%D0%B0%D1%87%D0%BD%D1%8B%D0%B9+%D0%BC%D0%B0%D0%B9&gs_lcp=CgNpbWcQARgAMgUIABCABDIHCAAQgAQQGDIHCAAQgAQQGDIHCAAQgAQQGDIHCAAQgAQQGDIHCAAQgAQQGDIHCAAQgAQQGDIHCAAQgAQQGDIHCAAQgAQQGDIHCAAQgAQQGDoECCMQJzoKCAAQgAQQigUQQzoJCAAQgAQQGBAKOgYIABAIEB5Q6wdY3ipgmDxoAnAAeACAAfkBiAGoDpIBBTUuOS4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=By2MZe-QBf_si-gP0L6osAk&bih=641&biw=1349&hl=ru">3</a>.</i>
+                <li>Hold on Spot</li>
+                <i>Холд на спот (англ. Hold on Spot) — покупаете монету/токен и храните, когда цена вырастает - вы продаете, либо и дальше храните.</i>
+                <li>Трейдинг</li>
+                <i>Трейдинг (англ. Trading) — это биржевая торговля на прогнозировании цены, которая осуществляется с целью получения прибыли. (Если вы правильно скажем так, предскажите цену того, или иного токена/монеты).</i>
+                <li>Эйрдропы, ретродропы, промки</li>
+                <i>Эйрдропы — вознаграждение за выполнение заданий (точнее шанс получить его), ретродропы — тоже самое, но на протяжении большего кол-ва времени.</i>
+                <li>Пресейлы</li>
+                <p>Pre-sale — покупка монет на ранней стадии развития проекта.</p>
+                <li>Арбитраж крипты</li>
+                <p>Купили на одной бирже, продали на той где дороже и получаем % с этой разницы в ценах.</p>
+                <li>Брать участие в акциях и розыгрышах от бирж</li>
+                <li>Брать участие в акциях и розыгрышах от бирж</li>
+                <p>Лидеры среди раздач:
+                    <a href="https://accounts.binance.com/register?ref=565345835">Binance</a>,
+                    <a href="https://www.bybit.com/invite?ref=8MWYMG">ByBit</a>,
+                    <a href="https://bingx.com/invite/UG3UGB">BingX</a>.
+              </ul>
+
+              <h3 style="margin-top: 20px;">Но, что же больше всего приносит $$$? Хм, а давайте лучше мы вам озвучим плюсы и минусы.</h3>
+              <p>
+                <ul class="list__earn">
+                    <li>1. (Staking) Стабильно, но мало приносит.</li>
+                    <li>2. (Mining) Довольно хороший вариант, но нужны вложения (на мощное оборудование/софт, если вы захотите майнить на своем личном пк/ноуте).</li>
+                    <li>3. (Hold on Spot) Принести прибыль может только в 1 случае, если монет будет большое кол-во и цена сильно вырастит.</li>
+                    <li>4. (Trading) Прибыльно, но нужно долго обучаться этому (трейдингу).</li>
+                    <li>5. (Airdrop, retrodrop, promo) Вложения тоже потребуются, и шанс оторвать свой кусок - будет не особо велик, особенно среди крипто-гигантов со своими телеграм каналами и другими источника трафика.</li>
+                    <li>6. (Pre-sale) Для меня - это самый неплохой вариант для новичков. Вложения - чем больше, тем лучше; Вы сможете заработать в 20х и больше, если токен проекта будет листинговаться на биржах (чем она больше *биржа* - тем больше будет цена); Но есть и шанс попасть на мошенников, будьте поэтому аккуратны!</li>
+                    <li>7. (Crypto arbitrage) Если у вас маленький капитал, то сюда вам не стоит лесть, так как вы будете больше терять, чем зарабатывать. Но сам вид заработка не плохой, но увы эта сфера кишит обманщиками со своими фейк-биржами и с сливными связками.</li>
+                </ul>
+              </p>
+            </div>
+            <br><hr>
+            <div style="margin-bottom: 10px;">
+                <h3>Разница между монетой, токеном и альткоином:</h3>
+                <ol>
+                    <li style="margin-top: 5px; margin-left: 3px;">Монета (Cryptocurrency):</li>
+                    <ul style="margin-left: 10px;">
+                        <li>Пример: Биткоин.</li>
+                        <li>Что это: Это цифровая валюта, которую можно использовать для покупок и обмена, независимо от какой-либо конкретной платформы.</li>
+                    </ul>
+
+                    <li style="margin-top: 8px;margin-left: 3px;">Токен (Token):</li>
+                    <ul style="margin-left: 10px;">
+                        <li>Пример: Токены на платформе Ethereum (например, ERC-20 токены).</li>
+                        <li>Что это: Это актив, созданный на базе блокчейна с помощью смарт-контрактов. Он может представлять - права к примеру на свой личный токен или долю в проекте.</li>
+                    </ul>
+
+                    <li style="margin-top: 8px; margin-left: 3px;">Альткоин (Altcoin):</li>
+                    <ul style="margin-left: 10px;">
+                        <li>Пример: Любая криптовалюта, отличная от биткоина (например, Ethereum, Litecoin, Ripple).</li>
+                        <li>Что это: Просто другая криптовалюта, которая не является биткоином.</li>
+                    </ul>
+                </ol>
+            </div>
+          </div>
+          
+        <div id="navigation__buttons__three" class="navigation__buttons__left_right" style="display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;">
+            <div style="width: 75%; padding-left: 22px;
+            display: flex;
+            border-radius: 5px;
+            margin-top: 20px;
+            padding: 22px;
+            height: fit-content;
+            background: #00fff5;
+            flex-direction: column;
+            align-items: center;">
+                <h2>Так-же важно помнить об этом...</h2>
+                <ul>
+                    <li>Никогда не инвестируйте больше, чем вы готовы потерять.</li>
+                    <li>Выберите надежные платформы для обмена криптовалюты.</li>
+                    <li>Создайте хранилище для своих криптовалютных активов (желательно хардварный кошелек).</li>
+                    <li>Диверсифицируйте свои инвестиции, не ставьте все на одну монету.</li>
+                    <li>Следите за новостями и трендами рынка.</li>
+                    <li>Будьте осторожны при инвестировании в новые и малоизвестные монеты/проекты.</li>
+                    <li>Не поддавайтесь эмоциям, придерживайтесь стратегии.</li>
+                    <li>Пользуйтесь двухфакторной аутентификацией для защиты своих аккаунтов.</li>
+                    <li>Постоянно обновляйте свои знания о рынке и технологиях блокчейн.</li>
+                    <li>Не пытайтесь предсказать рынок, делайте основанные на анализе решения.</li>
+                    <li>Изучите и понимайте команду разработчиков проекта, в который вы инвестируете.</li>
+                    <li>Остерегайтесь мошеннических схем и поддельных проектов.</li>
+                    <li>Не раскрывайте личную информацию и не доверяйте подозрительным источникам.</li>
+                    <li>Постоянно следите за изменениями в законодательстве касательно криптовалют.</li>
+                    <li>Участвуйте в сообществе криптовалют, общайтесь с опытными участниками.</li>
+                    <li>Понимайте, что рынок криптовалют может быть волатильным, и будьте готовы к колебаниям цен.</li>
+                    <li>Используйте стоп-лосс ордера для управления рисками.</li>
+                    <li>Не торгуйте на кредит, если вы не уверены в своих навыках.</li>
+                    <li>Вложите время в образование — чем больше вы знаете, тем лучше вы сможете принимать обоснованные решения.</li>
+                    <li>Избегайте использования общедоступных Wi-Fi сетей для доступа к своим криптовалютным активам.</li>
+                    <li>Не верьте обещаниям быстрого и легкого обогащения — успех на рынке криптовалют требует терпения и усилий.</li>
+                    <li>Понимайте, что рынок криптовалют работает круглосуточно, и вы должны следить за ним в любое время.</li>
+                    <li>Освойте базовые технические аспекты торговли, такие как различия между лимитными и рыночными ордерами.</li>
+                    <li>Изучите индикаторы технического анализа, такие как RSI, MACD, и Bollinger Bands.</li>
+                    <li>Будьте готовы к налоговым обязательствам, связанным с криптовалютами, и ведите соответствующую документацию.</li>
+                    <li>Принимайте решения на основе фундаментального анализа, изучая перспективы проекта и его цели.</li>
+                    <li>Избегайте "панических продаж" в периоды сильных колебаний цен — они часто приводят к потере капитала.</li>                  
+                  </ul>
+            </div>
+
+           <div class="poverh__container__project">
+                <h3>Наши проекты</h3>
+                <div id="container__project">
+                    <div id="block__project">
+                        <a href="https://t.me/HotTrafficologist">
+                            <img src="logo/HT.jpg" alt="">
+                        </a>
+                    </div>
+                    <div id="block__project">
+                        <a href="https://t.me/future_abuz">
+                            <img src="logo/FA.jpg" alt="">
+                        </a>
+                    </div>
+                    <div id="block__project">
+                        <a href="https://t.me/software1and1manuals_bot">
+                            <img src="logo/FP.jpg" alt="">
+                        </a>
+                    </div>
+                    <div id="block__project">
+                        <a href="https://t.me/IntroductionToCrypto">
+                            <img src="logo/ITC.jpg" alt="">
+                        </a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </header>
+    
+    <style>
+        footer {
+            width: 100%;
+            height: fit-content;
+            background: #002524;
+            color: white;
+            display: flex;
+        }
+        .footer__div__flex {
+           display: flex;
+           flex-direction: column;
+           width: 50%;
+        }
+    </style>
+    <footer>
+        <div id="" class="footer__div__flex" style="padding-bottom: 10px;">
+            <h3 style="padding-left: 15px;">Ссылки:</h3>
+            <ul style="display: flex; flex-direction: column; padding-left: 15px;">
+                <span>Биржи из статьи</span>
+                <div>
+                 <a href="https://www.bybit.com/invite?ref=8MWYMG" class="linkhover">ByBit</a>,
+                 <a href="https://accounts.binance.com/register?ref=565345835" class="linkhover">Binance</a>,
+                 <a href="https://okx.com/join/70065862" class="linkhover">OKX</a>,
+                 <a href="https://bingx.com/invite/UG3UGB" class="linkhover">BingX</a>,
+                 <a href="https://www.kucoin.com/r/rf/QBSKGBCG" class="linkhover">KuCoin</a>.
+                </div>
+            </ul>
+
+            <div style="margin-top: 8px; display: flex; flex-direction: column; margin-left: 15px;">
+              <a href="https://telegra.ph/Kak-polzovatsya-kripto-koshelkami-09-20" class="linkhover">Руководство по кошелькам, + термины и тп.</a>
+            </div>
+        </div>
+        <div id="" class="footer__div__flex">
+            <h3>Связь:</h3>
+            <div>
+             <a href="mailto:futureabuz@gmail.com" class="linkhover">Gmail Почта</a>,
+             <a href="https://t.me/+aDnKw1e_dZoxYzEy" class="linkhover">Наш чат</a>.
+            </div> 
+        </div>
+    </footer>
+
+    <script src="JavaScriptTest.js"></script>
+</body>
+</html>
