@@ -1,6 +1,6 @@
 # ForPortfolio
 
-Project 1 / IAC | Lamborghini (на рус. Ламборгини)
+Project 1 / IAC | Lamborghini (на рус. Ламборгини)<br>
 Project 2 / WAH | Crypto Courses (на рус. Крипто Курсы)
 
 WAH - Без вдохновений и ручная работа. (Without inspiration and handmade).<br>
